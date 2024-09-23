@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Links CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+  <title>Cidadania Italiana</title>
+</head>
+
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container-fluid container-navbar">
+      <div class="img-logo">
+        <img src="/assets/sub-logo.png" alt="">
+      </div>
+      <i class="fas fa-bars"></i>
+      <div class="navbar-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Sobre Nós</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="header">
+    <div class="bg-linear">
+      <div class="container-fluid container-header">
+        <div class="desc-header">
+          <h1>Realize o seu sonho de viver na Europa com tranquilidade!</h1>
+          <p>Oferecemos suporte completo para tornar o processo simples e livre de preocupações.</p>
+          <form action="">
+            <label for="">Nome Completo*</label>
+            <input type="text" class="text-input" required>
+            <label for="">Email*</label>
+            <input type="email" required>
+            <label for="">Whatsapp*</label>
+            <input type="tel" class="tel-input" required>
+            <a href="https://www.instagram.com/aguiar.programador/" class="btn btn-enviar">
+              ENVIAR
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="direito">
+      <h1>Quem tem direito</h1>
+      <div class="container-fluid container-direito">
+        <div class="video-direito">
+          <img src="/assets/Captura de tela 2024-09-23 113008.png" alt="Captura de tela" />
+        </div>
+        <div class="desc-direito">
+          <h2>A cidadania italiana pode ser obtida de várias maneiras:</h2>
+          <div class="list">
+            <i class="fas fa-play"></i>
+            <p><span>Descendentes de italianos:</span> Pode ser transmitida sem limite de gerações, desde que todos os
+              documentos necessários (certidões de nascimento, casamento e óbito) sejam apresentados.</p>
+          </div>
+          <div class="list">
+            <i class="fas fa-play"></i>
+            <p><span>Cônjuges de italianos:</span> O cônjuge de um cidadão italiano pode obter a cidadania após 3 anos
+              de casamento, ou 1,5 anos se tiverem filhos.</p>
+          </div>
+          <div class="list">
+            <i class="fas fa-play"></i>
+            <p><span>Residentes legais na Itália:</span> Estrangeiros que residem legalmente na Itália por pelo menos 10
+              anos podem solicitar a cidadania.</p>
+          </div>
+          <div class="list">
+            <i class="fas fa-play"></i>
+            <p><span>Nascidos na Itália:</span> Apenas aqueles com um dos pais italianos são reconhecidos como cidadãos,
+              já que a Itália adota o direito de sangue, e não de solo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="citizenship-steps">
+      <div class="container-fluid">
+        <div class="container">
+          <h2>Passos para Obter a Cidadania Italiana</h2>
+          <div class="steps-line">
+            <div class="step pulse active" onclick="showStep(1)">
+              <div class="step-number">1</div>
+              <div class="line"></div>
+            </div>
+            <div class="step" onclick="showStep(2)">
+              <div class="step-number">2</div>
+              <div class="line"></div>
+            </div>
+            <div class="step" onclick="showStep(3)">
+              <div class="step-number">3</div>
+              <div class="line"></div>
+            </div>
+            <div class="step" onclick="showStep(4)">
+              <div class="step-number">4</div>
+              <div class="line"></div>
+            </div>
+            <div class="step" onclick="showStep(5)">
+              <div class="step-number">5</div>
+            </div>
+          </div>
+
+          <div class="cards-container">
+            <div id="step-1" class="content-card ">
+              <div class="card">
+                <h3>Descobrir se você tem direito à nacionalidade</h3>
+                <p>Verifique se você tem ascendência italiana ou outros requisitos para solicitar a cidadania.</p>
+              </div>
+            </div>
+            <div id="step-2" class="content-card">
+              <div class="card">
+                <h3>Reunir todos os documentos necessários</h3>
+                <p>Certidões de nascimento, casamento e outros documentos devem ser reunidos.</p>
+              </div>
+            </div>
+            <div id="step-3" class="content-card">
+              <div class="card">
+                <h3>Verificar se a documentação está correta</h3>
+                <p>Confirme que todos os documentos atendem às exigências legais italianas.</p>
+              </div>
+            </div>
+            <div id="step-4" class="content-card">
+              <div class="card">
+                <h3>Realizar a conferência documental</h3>
+                <p>Revise a documentação para corrigir quaisquer erros ou divergências.</p>
+              </div>
+            </div>
+            <div id="step-5" class="content-card">
+              <div class="card">
+                <h3>Iniciar o processo de reconhecimento de cidadania</h3>
+                <p>Com a documentação correta, inicie o processo junto às autoridades italianas competentes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-button">
+          <button type="button" class="btn btn-passos">FALE CONOSCO</button>
+        </div>
+      </div>
+    </section>
+    <section class="testimonial">
+      <h1>Veja o que os nosso clientes dizem</h1>
+      <div class="container-fluid">
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <img src="/assets/3139bc64-8961-4a84-b106-3bbaec674254.jpg" alt="Imagem 1">
+            <img src="/assets/PHOTO-2022-01-24-14-22-57.jpeg" alt="Imagem 2">
+            <img src="/assets/PHOTO-2022-05-02-16-58-21.jpeg" alt="Imagem 3">
+            <img src="/assets/PHOTO-2022-02-23-23-10-18(1).jpeg" alt="Imagem 4">
+            <img src="/assets/Foto 2024-04-03 06.45.00 PM.png" alt="Imagem 5">
+          </div>
+          <!-- Controles de navegação -->
+          <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+          <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <!-- Pontos de navegação (opcional) -->
+        <div class="carousel-dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="about">
+    <div class="container-fluid container-about">
+      <div class="desc-about">
+        <h1>Sobre o Você na Europa</h1>
+        <p>A frente desse projeto estão os advogados Renan Perrotti e Daiana Perrotti, sócios do escritório Perrotti
+          Sociedade de Advogados que nasceu em São Paulo/BR no ano de 2005.
+          <br /><br />
+          Desde então mantém-se firme no mercado, atuando em diversos ramos do direito, especialmente em direito
+          internacional com ênfase na imigração entre o Brasil, Portugal, Itália e EUA.
+          <br /><br />
+          O que levou a estabelecer um escritório também em Portugal, desde 2018 e na Itália em 2021.
+          <br /><br />
+          Atualmente já auxiliamos mais de 7 mil famílias com a dupla cidadania e legalização na Europa.
+        </p>
+        <button class="btn btn-about">FALE CONOSCO</button>
+      </div>
+      <div class="img-about">
+        <img src="/assets/asset-aviao-90.webp" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="advs">
+    <div class="container-fluid">
+      <h1>Nossos advogados estão à disposição <br /> para atendê-los da melhor forma</h1>
+      <div class="container-cards">
+        <div class="card-renan">
+          <div class="card-renan-img">
+            <img src="/assets/Renan-n.webp" alt="Renan Perroti">
+          </div>
+          <h3>Renan Perrotti</h3>
+          <p>
+            Advogado no Brasil (OAB/SP 254.671), em Portugal (OA 59010P) e na Italia
+            (Iscrizione Albo do Palermo nº9057) atuante há 17 anos, sendo sócio fundador
+            do escritório juridico Perrotti Sociedade de Advogados(OAB/SP nº 11411).
+          </p>
+          <p>
+            Mestrando em Direito Europeu pela Universidade do Minho,
+            criador da mentoria Advogar em Portugal começando do zero
+            (Mentoria que auxilia advogados brasileiros a internacionalizar seu escritório).
+          </p>
+        </div>
+        <div class="card-dai">
+          <div class="card-dai-img">
+            <img src="/assets/dai-quadro-90.webp" alt="Daiana Perroti">
+          </div>
+          <h3>Daiana Perrotti</h3>
+          <p>
+            Advogada no Brasil (OAB/SP 355.305) e em Portugal (OA 59638P),
+            atuante há 9 anos, sócia do escritório jurídico Perrotti
+            Sociedade de Advogados(OAB/SP nº 11411).
+          </p>
+          <p>
+            Especializada em gestão e liderança de pessoas, é a responsável pelo
+            treinamento e qualificação de todo atendimento do Você na Europa.
+          </p>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-advs">FALE CONOSCO</button>
+  </section>
+
+  <section class="maps">
+    <iframe width="100%"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.6222490881355!2d-46.19402692562646!3d-23.510111959709487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdd81f9fa3f98d%3A0x533d312c601bfa07!2sAv.%20Pref.%20Carlos%20Ferreira%20Lopes%2C%20703%20-%20Vila%20Mogilar%2C%20Mogi%20das%20Cruzes%20-%20SP%2C%2008773-490!5e0!3m2!1spt-BR!2sbr!4v1726752661313!5m2!1spt-BR!2sbr"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <div class="contact-info">
+      <div class="logo-contact">
+        <img src="/assets/SUBMARCA_COR 01.png" alt="Logo" class="logo-maps">
+        <h2>Fale <br /> <span>conosco</span></h2>
+      </div>
+      <div class="desc-maps">
+        <div class="icons-text">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Av. Pref. Carlos Ferreira Lopes, 703 - sala 1318 - Vila Mogilar, Mogi das Cruzes - SP, 08773-490</p>
+        </div>
+        <div class="icons-text">
+          <i class="fas fa-phone"></i>
+          <p>Telefone: +55 11 93442 1703</p>
+        </div>
+        <div class="icons-text">
+          <i class="fas fa-envelope"></i>
+          <p>E-mail: <a href="mailto:info@vocenaeuropa.com">info@vocenaeuropa.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="footer">
+    <div class="container-footer-um">
+      <p>Perrotti sociedade de advogados</p>
+      <p>N° de registro OAB-SP 11411</p>
+      <p>Cnpj 10.688.781/0001-02</p>
+    </div>
+    <p>© Copyright 2022. Todos os direitos reservados a Você Na Europa.</p>
+    <p>Esta empresa de consultoria não oferece nenhum documento <br /> governamental apenas orientamos pra obtenção do
+      mesmo.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
