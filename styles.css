@@ -239,12 +239,12 @@ input {
 
 .list{
   display: flex;
-  align-items: center;
 }
 
 .list i{
   margin-right: 12px;
   color: var(--primary-color);
+  padding-top: 18px;
 }
 
 .list p{
@@ -276,7 +276,7 @@ input {
 
 /*-------------------------------------- Passos Section --------------------------------------*/
 .container {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -286,20 +286,6 @@ input {
   margin-bottom: 30px;
   margin-top: 0;
   color: var(--primary-color);
-}
-
-.steps-line {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  margin-bottom: 50px;
-}
-
-.step {
-  text-align: center;
-  position: relative;
-  cursor: pointer;
 }
 
 .step-number {
@@ -334,10 +320,23 @@ input {
   }
 }
 
-.step.active .step-number {
-  background-color: #333;
-  color: #fff;
-  animation: none; /* Remover a animação de pulse quando o step estiver ativo */
+.citizenship-steps {
+  padding: 25px 0 50px 0;
+  background: #fff;
+}
+
+.steps-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.step {
+  text-align: center;
+  position: relative;
+  cursor: pointer;
 }
 
 .line {
@@ -350,50 +349,40 @@ input {
   z-index: -1;
 }
 
-.cards-container {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+.step-content {
+  margin-top: 30px;
+  color: #640915;
 }
 
-.content-card {
+.content {
   display: none;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  flex: 1 1 calc(33.333% - 20px); 
-  max-width: calc(33.333% - 20px);
+  border: 1px solid #E6DDCE;
+  border-radius: 12px;
+  padding: 0px 12px;
+  text-align: center;
 }
 
-.content-card.active {
-  display: flex;
-  opacity: 1;
-}
-
-.card {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-}
-
-.card h3 {
-  color: var(--primary-color);
-  margin-bottom: 10px;
-}
-
-.card p {
-  color: #333;
+.content.active {
+  display: block;
 }
 
 .step.active .step-number {
-  background-color: var(--primary-color);
+  background-color: #640915;
   color: #fff;
 }
 
-.step.active ~ .line {
-  background-color: var(--primary-color);
+.step.active .line {
+  background-color: #640915;
+}
+
+@media (max-width: 768px) {
+  .line {
+    display: none;
+  }
+
+  .content{
+    text-align: start;
+  }
 }
 
 .container-button{
@@ -424,10 +413,66 @@ input {
   }
 }
 
+/*-------------------------------------- Beneficios Section --------------------------------------*/
+.benefits-section {
+  padding: 50px 20px;
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefits-section h2 {
+  text-align: center;
+  font-size: 36px;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.benefit {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.benefit i {
+  font-size: 40px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.benefit h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.benefit p {
+  font-size: 16px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*-------------------------------------- Testimonial Section --------------------------------------*/
 .testimonial{
   background-color: var(--bg-color);
   padding-top: 25px;
+  padding-bottom: 5px;
 }
 
 .testimonial h1{
@@ -437,70 +482,71 @@ input {
 }
 
 .carousel-container {
-  width: 100%;
-  max-width: 500px;
-  position: relative;
-  margin: auto;
-  overflow: hidden;
-}
-
-.carousel-slide {
   display: flex;
-  transition: transform 0.5s ease;
-  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  margin: 50px auto;
 }
 
-.carousel-slide img {
+.carousel-wrapper {
+  overflow: hidden;
+  width: 80%;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  cursor: grab;
+}
+
+.carousel-item {
+  min-width: 280px;
+  height: 450px;
+  margin: 0 10px;
+}
+
+.carousel-item img {
   width: 100%;
-  height: auto;
-  max-width: 200px;
+  height: 100%;
+  border-radius: 10px;
 }
 
-/* Botões de navegação */
-.prev, .next {
+.prev-btn,
+.next-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-  border: none;
-  font-size: 18px;
-  border-radius: 50%;
+  z-index: 10;
 }
 
-.prev {
-  left: 10px;
+.prev-btn {
+  left: 0;
 }
 
-.next {
-  right: 10px;
+.next-btn {
+  right: 0;
 }
 
-/* Posição e estilo dos pontos */
-.carousel-dots {
-  text-align: center;
-  padding: 10px 0;
+.carousel-container {
+  max-width: 1200px;
 }
 
-.dot {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin: 0 5px;
-  background-color: #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-}
+@media (max-width: 768px) {
+  .carousel-container{
+    width: 100%;
+  }
 
-.dot.active {
-  background-color: #640915;
-}
-
-/* Animação suave do carrossel */
-.carousel-slide {
-  transition: transform 0.5s ease-in-out;
+  .carousel-item{
+    height: 480px;
+  }
 }
 
 /*--------------------------------------- About Section ---------------------------------------*/
@@ -509,6 +555,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding-top: 10px;
 }
 
 .container-about {
@@ -526,6 +573,7 @@ input {
   color: var(--primary-color);
   font-size: 34px;
   font-weight: 500;
+  margin-top: 0;
 }
 
 .img-about {

@@ -12,8 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
-    rel="stylesheet"
-  >
+    rel="stylesheet">
   <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
 
   <title>Cidadania Italiana</title>
@@ -102,93 +101,110 @@
       </div>
     </section>
     <section class="citizenship-steps">
-      <div class="container-fluid">
-        <div class="container">
-          <h2>Passos para Obter a Cidadania Italiana</h2>
-          <div class="steps-line">
-            <div class="step pulse active" onclick="showStep(1)">
-              <div class="step-number">1</div>
-              <div class="line"></div>
-            </div>
-            <div class="step" onclick="showStep(2)">
-              <div class="step-number">2</div>
-              <div class="line"></div>
-            </div>
-            <div class="step" onclick="showStep(3)">
-              <div class="step-number">3</div>
-              <div class="line"></div>
-            </div>
-            <div class="step" onclick="showStep(4)">
-              <div class="step-number">4</div>
-              <div class="line"></div>
-            </div>
-            <div class="step" onclick="showStep(5)">
-              <div class="step-number">5</div>
-            </div>
+      <div class="container">
+        <h2>Passos para Obter a Cidadania Italiana</h2>
+        <div class="steps-line">
+          <div class="step active" onclick="showStep(1)">
+            <div class="step-number">1</div>
+            <div class="line"></div>
           </div>
-
-          <div class="cards-container">
-            <div id="step-1" class="content-card ">
-              <div class="card">
-                <h3>Descobrir se você tem direito à nacionalidade</h3>
-                <p>Verifique se você tem ascendência italiana ou outros requisitos para solicitar a cidadania.</p>
-              </div>
-            </div>
-            <div id="step-2" class="content-card">
-              <div class="card">
-                <h3>Reunir todos os documentos necessários</h3>
-                <p>Certidões de nascimento, casamento e outros documentos devem ser reunidos.</p>
-              </div>
-            </div>
-            <div id="step-3" class="content-card">
-              <div class="card">
-                <h3>Verificar se a documentação está correta</h3>
-                <p>Confirme que todos os documentos atendem às exigências legais italianas.</p>
-              </div>
-            </div>
-            <div id="step-4" class="content-card">
-              <div class="card">
-                <h3>Realizar a conferência documental</h3>
-                <p>Revise a documentação para corrigir quaisquer erros ou divergências.</p>
-              </div>
-            </div>
-            <div id="step-5" class="content-card">
-              <div class="card">
-                <h3>Iniciar o processo de reconhecimento de cidadania</h3>
-                <p>Com a documentação correta, inicie o processo junto às autoridades italianas competentes.</p>
-              </div>
-            </div>
+          <div class="step" onclick="showStep(2)">
+            <div class="step-number">2</div>
+            <div class="line"></div>
+          </div>
+          <div class="step" onclick="showStep(3)">
+            <div class="step-number">3</div>
+            <div class="line"></div>
+          </div>
+          <div class="step" onclick="showStep(4)">
+            <div class="step-number">4</div>
+            <div class="line"></div>
+          </div>
+          <div class="step" onclick="showStep(5)">
+            <div class="step-number">5</div>
           </div>
         </div>
-        <div class="container-button">
-          <button type="button" class="btn btn-passos">FALE CONOSCO</button>
+
+        <!-- Content of each step -->
+        <div class="step-content">
+          <div id="step-1" class="content active">
+            <h3>Descobrir se você tem direito à nacionalidade</h3>
+            <p>Verifique se você tem ascendência italiana ou outros requisitos para solicitar a cidadania.</p>
+          </div>
+          <div id="step-2" class="content">
+            <h3>Reunir todos os documentos necessários</h3>
+            <p>Certidões de nascimento, casamento e outros documentos devem ser reunidos.</p>
+          </div>
+          <div id="step-3" class="content">
+            <h3>Verificar se a documentação está correta</h3>
+            <p>Confirme que todos os documentos atendem às exigências legais italianas.</p>
+          </div>
+          <div id="step-4" class="content">
+            <h3>Realizar a conferência documental</h3>
+            <p>Revise a documentação para corrigir quaisquer erros ou divergências.</p>
+          </div>
+          <div id="step-5" class="content">
+            <h3>Iniciar o processo de reconhecimento de cidadania</h3>
+            <p>Com a documentação correta, inicie o processo junto às autoridades italianas competentes.</p>
+          </div>
         </div>
       </div>
     </section>
+
+    <section class="benefits-section">
+      <div class="container">
+        <h2>Benefícios de ter a Cidadania Italiana</h2>
+        <div class="benefits-grid">
+          <div class="benefit">
+            <i class="fas fa-globe-europe"></i>
+            <h3>Liberdade para Viajar</h3>
+            <p>Com a cidadania italiana, você tem o direito de viver, estudar e trabalhar em qualquer país da União Europeia sem a necessidade de visto.</p>
+          </div>
+          <div class="benefit">
+            <i class="fas fa-university"></i>
+            <h3>Educação de Qualidade</h3>
+            <p>Como cidadão da UE, você pode acessar instituições educacionais europeias de alta qualidade com custos reduzidos ou gratuitos em muitos casos.</p>
+          </div>
+          <div class="benefit">
+            <i class="fas fa-briefcase"></i>
+            <h3>Oportunidades de Trabalho</h3>
+            <p>Possuir cidadania italiana permite acesso a oportunidades de emprego em toda a União Europeia, sem restrições de visto de trabalho.</p>
+          </div>
+          <div class="benefit">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Segurança e Estabilidade</h3>
+            <p>Benefícios sociais e de saúde, além da proteção de estar sob a legislação de um dos países mais respeitados do mundo.</p>
+          </div>
+        </div>
+      </div>
+    </section>    
+
     <section class="testimonial">
       <h1>Veja o que os nosso clientes dizem</h1>
       <div class="container-fluid">
         <div class="carousel-container">
-          <div class="carousel-slide">
-            <img src="/assets/3139bc64-8961-4a84-b106-3bbaec674254.jpg" alt="Imagem 1">
-            <img src="/assets/PHOTO-2022-01-24-14-22-57.jpeg" alt="Imagem 2">
-            <img src="/assets/PHOTO-2022-05-02-16-58-21.jpeg" alt="Imagem 3">
-            <img src="/assets/PHOTO-2022-02-23-23-10-18(1).jpeg" alt="Imagem 4">
-            <img src="/assets/Foto 2024-04-03 06.45.00 PM.png" alt="Imagem 5">
+          <button class="prev-btn">&lt;</button>
+          <div class="carousel-wrapper">
+            <div class="carousel">
+              <div class="carousel-item">
+                <img src="/assets/3139bc64-8961-4a84-b106-3bbaec674254.jpg" alt="Imagem 1">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Foto 2024-04-03 06.45.00 PM.png" alt="Imagem 2">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/PHOTO-2022-01-24-14-22-57.jpeg" alt="Imagem 3">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/PHOTO-2022-02-23-23-10-18(1).jpeg" alt="Imagem 4">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/PHOTO-2022-05-02-16-58-21.jpeg" alt="Imagem 5">
+              </div>
+            </div>
           </div>
-          <!-- Controles de navegação -->
-          <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-          <button class="next" onclick="moveSlide(1)">&#10095;</button>
-        </div>
-
-        <!-- Pontos de navegação (opcional) -->
-        <div class="carousel-dots">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
-        </div>
+          <button class="next-btn">&gt;</button>
+        </div>               
       </div>
     </section>
   </main>
