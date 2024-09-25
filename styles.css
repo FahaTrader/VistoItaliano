@@ -239,7 +239,6 @@ input {
 
 .list{
   display: flex;
-  align-items: center;
 }
 
 .list i{
