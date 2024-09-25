@@ -244,6 +244,7 @@ input {
 .list i{
   margin-right: 12px;
   color: var(--primary-color);
+  padding-top: 10px;
 }
 
 .list p{
